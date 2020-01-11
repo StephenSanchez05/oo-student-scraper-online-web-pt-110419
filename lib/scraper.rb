@@ -5,7 +5,7 @@ require 'nokogiri'
 class Scraper
 
   def get_page
-    html = Nokogirir::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"))
+    html = Nokogiri::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"))
     
     binding.pry 
   end
