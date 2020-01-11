@@ -11,7 +11,7 @@ class Scraper
     get_page.css("div.roster-cards-container").each do |student|
       student.css(".student-card a").each do |student|
       student_name = student.css("h4").text
-      student_location = student.css(".student-location").text
+      student_location = student.css("p").text
       student_profile = "#{student.attr('href')}"
       array << {name: student_name, location: student_location, profile_url: student_profile}
     end
