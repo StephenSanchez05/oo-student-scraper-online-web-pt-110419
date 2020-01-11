@@ -14,6 +14,7 @@ class Scraper
       student_profile = "#{student.attr('href')}"
       array << {name: student_name, location: student_location, profile_url: student_profile}
     end
+  end
 
   array
   end
