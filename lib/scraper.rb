@@ -4,8 +4,15 @@ require 'nokogiri'
 
 class Scraper
 
-  def self.scrape_index_page(index_url)
+  def get_page
     html = Nokogirir::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"))
+  end
+  
+  def get_student
+    self.get_page.css
+
+  def self.scrape_index_page(index_url)
+    
     
     
   end
