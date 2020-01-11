@@ -14,7 +14,7 @@ class Scraper
       profile_url = "NY"
       array << {name: student_name, location: student_location, profile_url: student_profile}
     end
-  end
+
   array
   end
 
